@@ -1,0 +1,91 @@
+/* RESPONSIVE */
+
+/* TABLET */
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+
+    .menu .menu_lists {
+        width: 100%;
+    }
+
+    .content {
+        padding: 0 10px;
+    }
+
+    .mg-center {
+        width: 100%;
+    }
+
+    header .header_container {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .menu {
+        overflow: hidden;
+        padding: 0 10px;
+    }
+
+    .menu .menu_lists {
+        display: block;
+    }
+
+    .top_anime {
+        display: none;
+    }
+
+    .schedule .schedule_inner .schedule_inner--container {
+        display: block;
+        width: 100%;
+    }
+
+    .schedule .schedule_inner .schedule_inner--container .calendar {
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 105%;
+        margin-bottom: 15px;
+    }
+
+    .schedule .schedule_inner .schedule_inner--container .schedule_list .list-item {
+        display: block;
+        font-size: 105%;
+        margin: 0 0 5px;
+    }
+
+    .manga {
+        justify-content: space-between;
+    }
+
+    .manga .manga_card {
+        padding: 0 1%;
+        margin: 10px 0;
+        flex-basis: 33.33333333%;
+    }
+
+    .manga .manga_card a img {
+        width: 100%;
+        height: auto;
+    }
+
+    .time {
+        margin-left: 5px;
+    }
+
+    .notice {
+        margin-left: 5px;
+    }
+
+    .footer .footer_container {
+        display: block;
+        padding: 0 10px;
+    }
+
+    .footer .footer_container .footer_right {
+        width: 100%;
+    }
+
+}
+
+/* END TABLET */
+
+/* END RESPONSIVE */

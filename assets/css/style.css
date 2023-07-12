@@ -1,0 +1,590 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.red {
+    background-color: #ff2853;
+}
+
+.blue {
+    background-color: #56ccf2;
+}
+
+.violet {
+    background-color: #bd10e0;
+}
+
+.orange {
+    background-color: #f18121;
+
+}
+
+.green {
+    background-color: #8bc34a;
+}
+
+
+.hot {
+    color: #00bf8f;
+}
+
+.mg-center {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.margin-r15 {
+    margin-right: 15px;
+}
+
+.margin-l15 {
+    margin-left: 15px;
+}
+
+.margin-t24 {
+    margin-top: 24px;
+}
+
+.padding-lr15 {
+    padding: 0 15px;
+}
+
+.mg_tb-22 {
+    margin: 22px 0;
+}
+
+body {
+    background-color: #18191a;
+}
+
+.container_wapper {
+    /* width: 1903px; */
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header {
+    /* width: 1903px; */
+    height: 64px;
+    padding: 10px 0;
+    background-color: #18191a;
+}
+
+header .header_container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header_left {
+    display: flex;
+}
+
+header .header_left .header_left--search {
+    width: 420px;
+    margin-left: 20px;
+}
+
+header .header_left .header_left--search input{
+    width: 100%;
+    height: 44px;
+    border-radius: 50px;
+    padding: 0 45px 0 20px;
+    color: #757575;
+    font-size: inherit;
+    background-color: #3a3b3c;
+    outline: none;
+}
+
+header .header_right .header_right--img {
+    height: 44px;
+    width: 44px;
+}
+
+header .header_right .header_right--img img {
+    height: 44px;
+    width: 44px;
+    border-radius: 50px;
+}
+
+/* END HEADER */
+
+/* MENU */
+
+.menu {
+    background-color: #242526;
+    height: 52px;
+    /* width: 1903px; */
+}
+
+.menu .menu_lists {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.menu .menu_lists > a {
+    padding: 0 10px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 52px;
+    color: #e4e6eb;
+    position: relative;
+}
+
+.menu .menu_lists .hover-18191a {
+    padding: 0 10px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 52px;
+    color: #e4e6eb;
+    position: relative;
+}
+
+.menu .menu_lists>a:hover {
+    background-color: #f29c57;
+    transition: .3s;
+}
+
+
+
+.menu .menu_lists .menu_child .hover-18191a:hover {
+    background-color: #18191a;
+} 
+
+.menu .menu_lists .menu_child .menu_lists--child {
+    background-color: #242526;
+    display: none;
+    /* width: 1903px; */
+    width: 100%;
+    left: 0;
+    position: absolute;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    z-index: 3;
+}
+
+.menu .menu_lists .menu_child:hover .menu_lists--child {
+    display: block;
+}
+
+.menu_lists--childs {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.menu_lists--childs p {
+    width: 140px;
+    height: 40px;
+    flex-basis: 12.5%
+}
+
+.menu_lists--childs p a {
+    color: #e4e6eb;
+    width: 140px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.menu_lists--childs p a:hover {
+    color: #f18121;
+}
+
+/* END MENU */
+
+/* CONTENT */
+
+.content {
+}
+
+/* ALERT */
+.content .alert {
+    color: #31708f;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-left: 10px solid #2196f3;
+    border-right: 1px solid #2196f3;
+    border-top: 1px solid #2196f3;
+    border-bottom: 1px solid #2196f3;
+    background-color: #FFF;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+
+.content .alert a {
+    font-weight: 600;
+    color: #f18121 !important;
+}
+/* END ALERT */
+
+/* MAIN CONTENT */
+/* TOP ANIME */
+
+.top_anime {
+    display: flex;
+}
+
+.top_anime .top_anime--item {
+    padding: 0.75rem 2px;
+   
+}
+
+.top_anime .top_anime--item .img-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.top_anime .top_anime--item .chapterT {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(calc(1% + 15px), calc(100% - 10px));
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.captionsT {
+    position: absolute;
+    top: 99%;
+    left: 15px;
+    transform: translateY(calc(-100% - 10px));
+    color: #fff;
+    z-index: 1;
+}
+
+.captionsT h5 {
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.captionsT h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.bottom_shadowT {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75));
+}
+
+.top_anime .top_anime--item .img-item .img-nho {
+    width: 297px;
+    height: 189px;
+}
+
+.top_anime .top_anime--item .img-lon {
+    width: 598px;
+    height: 380px;
+}
+
+/* END TOP ANIME */
+
+/* SCHEDULE */
+
+.schedule {
+    margin-bottom: 25px;
+}
+
+.schedule .schedule_inner {
+    background-color: #242526;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    display: flex;
+    padding: 20px 15px 15px 20px;
+}
+
+.schedule .schedule_inner .schedule_inner--container {
+    display: flex;
+}
+
+.schedule .schedule_inner .schedule_inner--container .calendar {
+    flex: 0 0 120px;
+    background-color: rgba(241, 129, 33, .7);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    padding: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -.5px;
+    margin-right: 15px;
+}
+
+.schedule .schedule_inner .schedule_inner--container .schedule_list {
+}
+
+.schedule .schedule_inner .schedule_inner--container .schedule_list .list-item {
+    display: inline-block;
+}
+
+.schedule .schedule_inner .schedule_inner--container .schedule_list .list-item:hover a {
+    color: #f18121;
+    transition: 0.3s ease;
+}
+
+.schedule .schedule_inner .schedule_inner--container .schedule_list .list-item a {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: -.5px;
+    margin: 0 10px 5px 0;
+    color: #e4e6eb;
+}
+
+/* END SCHEDULE */
+
+/* MAIN HOMEPAGE */
+
+.main_homepage {
+
+}
+
+.main_homepage .homepage_tags h1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    color: #e4e6eb;
+}
+
+/* MANGA */
+
+.manga {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.manga .manga_card {
+    flex-basis: 16.666666%;
+    padding: 0 10px;
+    width: 180px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.time {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    margin-left: 10px;
+}
+
+.time span {
+    border-radius: 5px;
+    background-color: #56ccf2;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px 3px;
+}
+
+.notice {
+    position: absolute;
+    top: 9px;
+    left: 96px;
+    margin-left: 10px;
+
+}
+
+.notice span {
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 6px 3px;
+    background-color: #ff2853;
+}
+
+.manga .manga_card a img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.manga .manga_card .book_info h3 {
+    text-align: center;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 7px;
+    color: #e4e6eb;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.manga .manga_card .book_info .last_chapter {
+    font-size: 12px;
+    text-align: center;
+    color: #e4e6eb
+}
+
+.manga .manga_card:hover {
+    opacity: 0.8;
+}
+
+/* END MANGA */
+
+/* SEE MORE */
+.see_more {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.see_more a {
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 25%);
+    background-color: #f18121;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+.see_more a:hover {
+    opacity: 0.8;
+}
+
+/* END SEE MORE */
+
+.list_inline .list_inline--item {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-weight: 400;
+}
+
+.list_inline .list_inline--item:hover a {
+    color: #f18121;
+    transition: 0.3s ease;
+}
+
+.list_inline .list_inline--item a {
+    color: #e4e6eb;
+    line-height: 22px;
+}
+
+/* END MAIN HOMEPAGE */
+
+/* END MAIN CONTENT */
+
+/* END CONTENT */
+
+/* FOOTER */
+
+.footer {
+    border-top: 5px solid #e4e6eb;
+    padding: 20px 0;
+    margin-top: 30px;
+    background-color: #242526;
+}
+
+.footer .footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer_container .footer_left .footer_left {
+    width: 50%;
+}
+
+.footer .footer_container .footer_left .footer_left--logo {
+
+}
+
+.footer .footer_container .footer_left .footer_left--download a img {
+    width: 150px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.footer .footer_container .footer_left .footer_left--email {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.footer .footer_container .footer_left .footer_left--email a {
+    color: #e4e6eb;
+}
+
+.footer .footer_container .footer_left .footer_left--email:hover a {
+    color: #f18121;
+    transition: 0.3 ease;
+}
+
+.footer .footer_container .footer_right {
+    width: 50%;
+}
+
+.footer .footer_container .footer_right .category {
+    display: flex;
+}
+
+.footer .footer_container .footer_right .footer_right--item {
+    line-height: 30px;
+    background-color: #18191a;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    height: 30px;
+}
+
+.footer .footer_container .footer_right .footer_right--item:hover {
+    background-color: #f18121;
+    transition: 0.3s ease;
+}
+
+.footer .footer_container .footer_right .footer_right--item a {
+    color: #e4e6eb;
+    display: block;
+    padding: 0 5px;
+}
+
+.footer_content {
+        font-size: 13px;
+        line-height: 21px;
+        color: #e4e6eb;
+        margin-top: 10px;
+}
+
+/* END FOOTER */
+
